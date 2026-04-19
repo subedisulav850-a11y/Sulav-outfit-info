@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "mrc-outfit.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "mrc-outfit.py"
+        }
+    ]
+}
